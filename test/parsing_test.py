@@ -19,5 +19,3 @@ def test_main_prints_the_day_of_the_biggest_variation():
     output = out.getvalue().strip()
     assert_equal(output, "Day 2 had the biggest variation (26.0 degrees)")
     sys.stdout = saved_stdout
-
-

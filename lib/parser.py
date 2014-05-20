@@ -1,4 +1,4 @@
-def main():
+def split_line():
     pass
 
 
@@ -14,5 +14,5 @@ def load_weather_file():
     pass
 
 
-def split_line():
+def main():
     pass
