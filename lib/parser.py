@@ -4,11 +4,14 @@ def split_line(split_line):
     pass
 
 
-def encode_line():
+def encode_line(encode_line):
+    if len(encode_line) <= 2:
+        raise ValueError('incomplete list')
     pass
 
 
 def find_biggest_variation():
+    
     pass
 
 
