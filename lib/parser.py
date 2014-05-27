@@ -1,3 +1,7 @@
+def load_weather_file():
+    pass
+
+
 def split_line(split_line):
     if split_line == '':
         raise ValueError('can not parse empty line')
@@ -9,10 +13,6 @@ def encode_line():
 
 
 def find_biggest_variation():
-    pass
-
-
-def load_weather_file():
     pass
 
 
