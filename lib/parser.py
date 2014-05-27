@@ -1,4 +1,6 @@
-def split_line():
+def split_line(split_line):
+    if split_line == '':
+        raise ValueError('can not parse empty line')
     pass
 
 
