@@ -1,6 +1,6 @@
 def load_weather_file(file):
     file = open(weather.dat())
-        heje jag easd
+
     pass
 
 
