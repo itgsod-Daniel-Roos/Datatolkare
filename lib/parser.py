@@ -1,4 +1,6 @@
-def load_weather_file():
+def load_weather_file(file):
+    file = open(weather.dat())
+
     pass
 
 
