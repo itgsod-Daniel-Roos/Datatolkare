@@ -1,10 +1,6 @@
 def load_weather_file(file):
     file = open(weather.dat())
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> FETCH_HEAD
     pass
 
 
