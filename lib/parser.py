@@ -4,7 +4,7 @@ def load_weather_file(file):
     pass
 
 
-def split_line(split_line):
+def split_line(split_line): asdfghjklöä
     if split_line == '':
         raise ValueError('can not parse empty line')
     pass
