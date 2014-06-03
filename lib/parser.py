@@ -13,8 +13,10 @@ def encode_line(encode_line):
 
 
 def find_biggest_variation(find_biggest_variation):
-    if len(find_biggest_variation()) == 0:
+    #if len(find_biggest_variation([])) == 0:
+    if not find_biggest_variation:
         raise ValueError('list must not be empty')
+
     pass
 
 
