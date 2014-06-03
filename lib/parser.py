@@ -33,7 +33,7 @@ def load_weather_file(myfile):
         raise IOError('file does not exist')
     with open(myfile, 'r') as weatherfile:
         weatherdata = weatherfile.readlines()
-    return weatherdata
+    return weatherdata[2:]
 
 
 def main():
