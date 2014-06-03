@@ -36,5 +36,7 @@ def load_weather_file(myfile):
     return weatherdata[2:]
 
 
-def main():
-    pass
+def main(inputfile):
+    data = load_weather_file(inputfile)
+    for object in data:
+        result = split_line(object)
