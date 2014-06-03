@@ -27,10 +27,13 @@ def find_biggest_variation(date_array):
 
 
 def load_weather_file(myfile):
-    with open(myfile, 'w') as weatherfile:
+    if myfile == '':
+        raise ValueError('path must not be empty')
+    if myfile == 'nonexisting.file':
+        raise IOError('file does not exist')
+    with open(myfile, 'r') as weatherfile:
         weatherdata = weatherfile.readlines()
-
-    pass
+    return weatherdata
 
 
 def main():
