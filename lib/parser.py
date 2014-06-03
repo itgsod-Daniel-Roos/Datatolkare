@@ -1,6 +1,8 @@
 def split_line(split_line):
     if split_line == '':
         raise ValueError('can not parse empty line')
+    words = split_line.split()
+    return words
     pass
 
 
@@ -10,8 +12,9 @@ def encode_line(encode_line):
     pass
 
 
-def find_biggest_variation():
-    
+def find_biggest_variation(find_biggest_variation):
+    if len(find_biggest_variation()) == 0:
+        raise ValueError('list must not be empty')
     pass
 
 
