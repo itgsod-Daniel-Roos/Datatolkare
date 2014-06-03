@@ -9,7 +9,9 @@ def encode_line(encode_line):
     hashresult = {}
     if len(encode_line) <= 2:
         raise ValueError('incomplete list')
-    hashresult[encode_line[0]] = encode_line[1] + " " + encode_line[2]
+    hashresult['date'] = int(encode_line[0])
+    hashresult['max'] = int(encode_line[1])
+    hashresult['min'] = int(encode_line[2])
     return hashresult
 
 
@@ -17,7 +19,7 @@ def find_biggest_variation(find_biggest_variation):
     #if len(find_biggest_variation([])) == 0:
     if not find_biggest_variation:
         raise ValueError('list must not be empty')
-
+    
     pass
 
 
