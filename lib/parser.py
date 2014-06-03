@@ -15,12 +15,15 @@ def encode_line(encode_line):
     return hashresult
 
 
-def find_biggest_variation(find_biggest_variation):
-    #if len(find_biggest_variation([])) == 0:
-    if not find_biggest_variation:
+def find_biggest_variation(date_array):
+    if not date_array:
         raise ValueError('list must not be empty')
-    
-    pass
+    calc_biggest_diff = 0
+    for i in date_array:
+        if i['max'] - i['min'] > calc_biggest_diff:
+            calc_biggest_diff = i['max'] - i['min']
+            biggest_diff = i
+    return biggest_diff
 
 
 def load_weather_file(myfile):
