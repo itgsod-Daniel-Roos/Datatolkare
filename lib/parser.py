@@ -3,13 +3,14 @@ def split_line(split_line):
         raise ValueError('can not parse empty line')
     words = split_line.split()
     return words
-    pass
 
 
 def encode_line(encode_line):
+    hashresult = {}
     if len(encode_line) <= 2:
         raise ValueError('incomplete list')
-    pass
+    hashresult[encode_line[0]] = encode_line[1] + " " + encode_line[2]
+    return hashresult
 
 
 def find_biggest_variation(find_biggest_variation):
