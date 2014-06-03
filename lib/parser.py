@@ -1,3 +1,5 @@
+import os.path
+
 def split_line(split_line):
     if split_line == '':
         raise ValueError('can not parse empty line')
@@ -29,7 +31,7 @@ def find_biggest_variation(date_array):
 def load_weather_file(myfile):
     if myfile == '':
         raise ValueError('path must not be empty')
-    if myfile == 'nonexisting.file':
+    if not os.path.isfile(myfile):
         raise IOError('file does not exist')
     with open(myfile, 'r') as weatherfile:
         weatherdata = weatherfile.readlines()
