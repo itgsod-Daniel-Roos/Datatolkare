@@ -39,6 +39,12 @@ def load_weather_file(myfile):
 
 
 def main(inputfile):
-    data = load_weather_file(inputfile)
-    for object in data:
-        result = split_line(object)
+    weather_data = load_weather_file(inputfile)
+    compare_list = []
+    for weather in weather_data:
+        split = split_line(weather)
+        compare_list.append(encode_line(split))
+    biggest_variation = find_biggest_variation(compare_list)
+    variation = biggest_variation['max'] - biggest_variation['min']
+    str_to_return = 'Day ' + biggest_variation['date'] + ' had the biggest variation (' + variation + ' degrees).'
+    return str_to_return
