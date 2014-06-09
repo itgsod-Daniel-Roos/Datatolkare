@@ -46,5 +46,4 @@ def main(inputfile):
         compare_list.append(encode_line(split))
     biggest_variation = find_biggest_variation(compare_list)
     variation = biggest_variation['max'] - biggest_variation['min']
-    str_to_return = 'Day ' + biggest_variation['date'] + ' had the biggest variation (' + variation + ' degrees).'
-    return str_to_return
+    return "Day ', biggest_variation['date'], ' had the biggest variation (', variation, ' degrees)."
